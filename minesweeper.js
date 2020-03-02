@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', startGame)
 // Define your `board` object here!
 var board = {}
 
+var win = new Audio();
+win.src = "audio/applause4.mp3"
 
 function startGame () {
   // calls function to generate the game board
@@ -110,7 +112,8 @@ function checkForWin () {
   }
   // checking for win
   if( isMarkedCount == isMineCount && isHiddenCount == 0){
-    lib.displayMessage('You win!')
+    lib.displayMessage('You win!');
+    win.play()
   } 
 }
 
