@@ -80,4 +80,7 @@ div.marked, div.marked:hover {
 
 .infoBox{
   color: blanchedalmond;
+  border-radius: 10px;
+  padding: 1.5rem;
+  background-color: rgba(0,0,0,0.7);
 }
