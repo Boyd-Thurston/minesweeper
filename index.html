@@ -10,6 +10,27 @@
   <body>
     <div id="message"></div>
     <div id="notes"></div>
+    <div id="buttons">
+      <div>
+        <input type="radio" value=4 name="boardSize" checked="checked">
+          <label>Small 3x3</label>
+        <input type="radio" value=5 name="boardSize"> 
+          <label>Medium 5x5</label>
+        <input type="radio" value=6 name="boardSize">
+          <label>Large 8x8</label>
+      </div>
+      <div>
+        <input type="radio" value="easy" name="difficulty">
+          <label>Easy</label>
+        <input type="radio" value="normal" name="difficulty" checked="checked"> 
+          <label>Normal</label>
+        <input type="radio" value="hard" name="difficulty">
+          <label>Hard</label>
+      </div>
+    </div>
+    <div>
+      <button type="button" id="reset">Reset</button>
+    </div>
     <div class="board"></div>
   </body>
 </html>
